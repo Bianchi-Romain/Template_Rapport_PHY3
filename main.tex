@@ -1,0 +1,40 @@
+\documentclass{rapport}
+\usepackage{pythontex}
+\title{Rapport UCL - Template} %Titre du fichier
+
+\begin{document}
+
+%----------- Informations du rapport ---------
+
+
+\unif{HEIG}
+\titre{Rapport } %Titre du fichier .pdf
+\cours{Phy 3} %Nom du cours
+\sujet{sujet} %Nom du sujet
+
+\enseignant{S. \textsc{Schinkte}\\
+     S. \textsc{Del Rossi}} %Nom de l'enseignant
+
+\eleves{
+    Romain \textsc{bianchi} 
+     } %Nom des élèves
+
+\nom{Romain Bianchi - }
+
+
+%----------- Initialisation -------------------
+        
+\fairemarges %Afficher les marges
+\fairepagedegarde %Créer la page de garde
+\tabledematieres %Créer la table de matières
+
+%------------ Corps du rapport ----------------
+
+\input{Chapitres/ch1.tex}
+\input{Chapitres/ch2.tex}
+\input{Chapitres/ch3.tex}
+\input{Chapitres/ch4.tex}
+\input{Chapitres/Bibliographie.tex}
+\input{Chapitres/Annexes.tex}
+
+\end{document}

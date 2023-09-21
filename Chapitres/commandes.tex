@@ -1,0 +1,62 @@
+%------------- Commandes utiles ----------------
+
+\section{Quelques commandes}
+
+Voici quelques commandes utiles :
+
+%------ Pour insérer et citer une image centralisée -----
+
+\insererfigure{logos/Import.jpg}{3cm}{Légende de la figure}{Label de la figure}
+% Le premier argument est le chemin pour la photo
+% Le deuxième est la hauteur de la photo
+% Le troisième la légende
+% Le quatrième le label
+Ici, je cite l'image \ref{fig: Label de la figure}
+
+
+%------- Pour insérer et citer une équation --------------
+
+\begin{equation} \label{eq: exemple}
+\rho + \Delta = 42
+\end{equation}
+
+L'équation \ref{eq: exemple} est cité ici. 
+
+% ------- Pour écrire des variables ----------------------
+
+Pour écrire des variables dans le texte, il suffit de mettre le symbole \$ entre le texte souhaité comme : constante $\rho$.
+
+Pour utiliser pythontex : (pour les chapitres un fichier tex séparé pour python a été préparé)
+\begin{pycode}
+x = 3
+\end{pycode}
+       
+$x = \py{x}$
+
+si x = ?? effectuer :
+pythontex main.tex
+
+
+% ------- Liste à points ----------------------
+
+\begin{itemize}
+    \item List entries start with the \verb|\item| command.
+    \item Individual entries are indicated with a black dot, a so-called bullet.
+    \item The text in the entries may be of any length.
+  \end{itemize}
+
+  % ------- Liste numérotée ----------------------
+
+  \begin{enumerate}
+    \item Items are numbered automatically.
+    \item The numbers start at 1 with each use of the \texttt{enumerate} environment.
+    \item Another entry in the list
+  \end{enumerate}
+
+  % ------- tableaux ----------------------
+
+  https://www.tablesgenerator.com/
+
+   % ------- Equations ----------------------
+
+   https://latexeditor.lagrida.com/
